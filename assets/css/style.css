@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+}
+
+#header {
+  width: 100%;
+  height: 46.5px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 24px;
+}
+
+#nav .subnav li {
+  background-color: #fff;
+  display: block;
+}
+
+#nav .subnav a {
+  color: #000;
+  min-width: 160px;
+  line-height: 38.5px;
+  padding: 0 16px;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46.5px;
+  display: block;
+}
+
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav a:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+#header .search-button {
+  float: right;
+  color: white;
+  width: 61.94px;
+  height: 46.5px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+#header .search-button:hover {
+  background-color: red;
+}
+
+#slider {
+  margin-top: 46.5px;
+  background: url(/1_THE_BAND/assets/img/slider/chicago.jpg) top center / cover
+    no-repeat;
+  padding-top: 50%;
+  position: relative;
+}
+
+#slider .img-description {
+  color: #fff;
+  padding: 32px 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+#slider .img-title {
+  height: 36px;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#slider .img-subtitle {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#content .about {
+  margin: 0 auto;
+  padding: 64px 16px;
+  max-width: 802px;
+}
+
+#content .section-title {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 10px 0;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#content .section-subtitle {
+  font-style: oblique;
+  opacity: 0.6;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#content .section-content {
+  margin: 15px 0;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#team {
+  padding: 32px 0;
+  max-width: 802px;
+}
+
+#team .member {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+#team .member-name {
+  margin: 15px 0;
+  height: 22.5px;
+}
+
+#team .member-img {
+  border-radius: 6px;
+  width: 153.58px;
+  height: 153.58px;
+  margin: 0 0 16px;
+}
+
+#team::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#tour {
+  background-color: #000;
+}
+
+#tour-content {
+  height: 846.27px;
+  padding: 64px 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#tour .section-title {
+  color: white;
+}
+
+#tour .section-subtitle {
+  color: white;
+}
+
+#tour .ticket-content {
+  margin-top: 40px;
+  background-color: white;
+}
+
+#tour .ticket-month {
+  padding: 8px 16px;
+  height: 39.5px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+  list-style: none;
+}
+
+#tour .ticket-out {
+  background-color: #f44336;
+  color: white;
+  margin: 0 0 0 16px;
+  padding: 2px 8px;
+  text-align: center;
+}
+
+#tour .ticket-quatity {
+  float: right;
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  margin: 0 16px 0 0;
+}
+
+#tour-places {
+  margin: 0 -16px;
+  padding: 32px 8px;
+}
+
+#tour-places .place {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#tour-places::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#tour-places .place-img {
+  width: 245.33px;
+}
+
+#tour-places .place-description {
+  background-color: #fff;
+  width: 245.33px;
+  margin: -2.6px 8px 0;
+  padding: 0.15px 16px;
+  text-align: left;
+}
+
+#tour-places .place-name {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#tour-places .place-date {
+  opacity: 0.6;
+  margin: 15px 0;
+}
+
+#tour-places .place-intro {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+#tour-places button {
+  margin: 0 0 16px;
+  padding: 8px 16px;
+  background-color: #000;
+  color: white;
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+#tour-places .place-img:hover {
+  opacity: 0.6;
+}
+
+#tour-places button:hover {
+  background-color: #ccc;
+  border: #ccc;
+  color: #000;
+  cursor: pointer;
+  height: 38.2px;
+}
+
+#contact {
+  margin: 0 auto;
+  padding: 64px 16px;
+  max-width: 800px;
+}
+
+#contact .contact-column {
+  float: left;
+  width: 50%;
+}
+
+#contact .contact-content {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#contact .contact-content {
+  padding: 32px 0;
+}
+
+#contact .contact-address {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#contact .fa-solid {
+  width: 30px;
+}
+
+#contact .fill {
+  padding: 8px;
+  font-size: 15px;
+}
+
+#contact .fill-name {
+  width: 183.98px;
+  height: 40.5px;
+  margin: 0 13px 8px 0;
+}
+
+#contact .fill-email {
+  width: 183.98px;
+  height: 40.5px;
+  margin: 0 0 8px 0;
+}
+
+#contact .fill-message {
+  width: 383.98px;
+  height: 40.5px;
+}
+
+#contact .send {
+  float: right;
+  padding: 8px 16px;
+  margin: 16px 0;
+  background-color: #000;
+  color: #fff;
+  width: 71.31px;
+  height: 38.5px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+}
+
+#contact .send:hover {
+  color: #000;
+  background-color: #ccc;
+  border: #ccc;
+  cursor: pointer;
+}
+
+#poster {
+  background: url(/1_THE_BAND/assets/img/content/map.jpg) center / cover
+    no-repeat;
+  padding-top: 50%;
+}
+
+#footer {
+  background-color: #f1f1f1;
+  height: 216.5px;
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .fa-brands {
+  color: #757575;
+  font-size: 24px;
+  margin: 0 2px;
+}
+
+#footer .fa-brands:hover {
+  opacity: 0.6;
+}
+
+#footer .creator {
+  color: #757575;
+  margin: 15px 0;
+}
