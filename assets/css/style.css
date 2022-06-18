@@ -88,8 +88,7 @@ html {
 
 #slider {
   margin-top: 46.5px;
-  background: url(/1_THE_BAND/assets/img/slider/chicago.jpg) top center / cover
-    no-repeat;
+  background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
   padding-top: 50%;
   position: relative;
 }
@@ -363,8 +362,7 @@ html {
 }
 
 #poster {
-  background: url(/1_THE_BAND/assets/img/content/map.jpg) center / cover
-    no-repeat;
+  background: url(/assets/img/content/map.jpg) center / cover no-repeat;
   padding-top: 50%;
 }
 
