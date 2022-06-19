@@ -88,9 +88,27 @@ html {
 
 #slider {
   margin-top: 46.5px;
-  background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+/*   background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat; */
   padding-top: 50%;
   position: relative;
+  animation-name: transition-img;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transition-img {
+  0% {
+    background: url(/assets/img/slider/chicago.jpg) top center /
+      cover no-repeat;
+  }
+  50% {
+    background: url(/assets/img/slider/la.jpg) top center / cover
+      no-repeat;
+  }
+  100% {
+    background: url(/assets/img/slider/ny.jpg) top center / cover
+      no-repeat;
+  }
 }
 
 #slider .img-description {
