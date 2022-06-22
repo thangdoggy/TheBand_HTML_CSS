@@ -88,7 +88,7 @@ html {
 
 #slider {
   margin-top: 46.5px;
-/*   background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat; */
+  /*   background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat; */
   padding-top: 50%;
   position: relative;
   animation-name: transition-img;
@@ -98,16 +98,13 @@ html {
 
 @keyframes transition-img {
   0% {
-    background: url(/assets/img/slider/chicago.jpg) top center /
-      cover no-repeat;
+    background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
   }
   50% {
-    background: url(/assets/img/slider/la.jpg) top center / cover
-      no-repeat;
+    background: url(/assets/img/slider/la.jpg) top center / cover no-repeat;
   }
   100% {
-    background: url(/assets/img/slider/ny.jpg) top center / cover
-      no-repeat;
+    background: url(/assets/img/slider/ny.jpg) top center / cover no-repeat;
   }
 }
 
@@ -405,3 +402,42 @@ html {
   color: #757575;
   margin: 15px 0;
 }
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal .modal-close {
+  float: right;
+}
+
+#modal .modal-header {
+  background-color: #009688 !important;
+  padding: 32px 16px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+#modal .header-name {
+  margin: 10px 0;
+  font-size: 30px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: normal;
+}
+
+#modal .modal-body {
+  background-color: #fff;
+  padding: 0.15px 16px;
+}
+
+/* #modal .modal-label {
+  color: #000;
+} */
