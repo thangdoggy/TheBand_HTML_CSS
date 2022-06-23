@@ -424,6 +424,20 @@ html {
 #modal .modal-container {
   width: 900px;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  animation-name: modal-appear;
+  animation-duration: 0.6s;
+}
+
+@keyframes modal-appear {
+  from {
+    opacity: 0.4;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 #modal .modal-close {
