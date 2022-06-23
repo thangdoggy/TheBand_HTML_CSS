@@ -129,7 +129,9 @@
                   <p class="place-intro">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button type="button">Buy Tickets</button>
+                  <button type="button" class="js-buy-ticket">
+                    Buy Tickets
+                  </button>
                 </div>
               </div>
               <div class="place">
@@ -144,7 +146,9 @@
                   <p class="place-intro">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button type="button">Buy Tickets</button>
+                  <button type="button" class="js-buy-ticket">
+                    Buy Tickets
+                  </button>
                 </div>
               </div>
               <div class="place">
@@ -159,7 +163,9 @@
                   <p class="place-intro">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button type="button">Buy Tickets</button>
+                  <button type="button" class="js-buy-ticket">
+                    Buy Tickets
+                  </button>
                 </div>
               </div>
             </div>
@@ -212,30 +218,62 @@
   </body>
 
   <div id="modal">
-    <header class="modal-header">
+    <div class="modal-container">
       <div class="modal-close">
         <i class="fa-solid fa-xmark"></i>
       </div>
-      <h2 class="header-name">
-        <i class="fa-solid fa-suitcase"></i>
-        Tickets
-      </h2>
-    </header>
+      <header class="modal-header">
+        <h2 class="header-name">
+          <i class="fa-solid fa-suitcase"></i>
+          Tickets
+        </h2>
+      </header>
+      <div class="modal-body">
+        <div class="modal-label">
+          <i class="fa-solid fa-cart-shopping-fast"></i>
+          Tickets, $15 per person
+        </div>
+        <input type="text" class="inp" placeholder="How many?" />
 
-    <div class="modal-body">
-      <label for="" class="modal-label">
-        <i class="fa-solid fa-cart-shopping-fast"></i>
-        Tickets, $15 per person
-      </label>
-      <input type="text" class="inp-howmany" placeholder="How many?" />
+        <div class="modal-label">
+          <i class="fa-solid fa-cart-shopping-fast"></i>
+          Send To
+        </div>
+        <input type="text" class="inp" placeholder="Enter email" />
 
-      <label for="" class="modal-label">
-        <i class="fa-solid fa-cart-shopping-fast"></i>
-        Send To
-      </label>
-      <input type="text" class="inp-email" placeholder="Enter email" />
+        <button type="submit" class="submit">
+          PAY <i class="fa-solid fa-check"></i>
+        </button>
 
-      <button type="submit">Pay <i class="fa-solid fa-check"></i></button>
+        <p class="help">Need <a href="">help?</a></p>
+      </div>
     </div>
   </div>
+
+  <script>
+    const buyBtns = document.querySelectorAll(".js-buy-ticket");
+    const modal = document.getElementById("modal");
+    const modalClose = document.querySelector(".modal-close");
+    const modalContainer = document.querySelector(".modal-container");
+
+    function showBuyTicket() {
+      modal.classList.add("open");
+    }
+
+    function hideBuyTicket() {
+      modal.classList.remove("open");
+    }
+
+    for (const buyBtn of buyBtns) {
+      buyBtn.addEventListener("click", showBuyTicket);
+    }
+
+    modalClose.addEventListener("click", hideBuyTicket);
+
+    modal.addEventListener("click", hideBuyTicket);
+
+    modalContainer.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  </script>
 </html>

@@ -404,26 +404,48 @@ html {
 }
 
 #modal {
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
+  display: none;
+}
+
+#modal.open {
+  display: flex;
+}
+
+#modal .modal-container {
+  width: 900px;
+  position: relative;
 }
 
 #modal .modal-close {
-  float: right;
+  font-size: 18px;
+  padding: 8px 16px;
+  position: absolute;
+  color: white;
+  right: 0;
+}
+
+#modal .modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
 }
 
 #modal .modal-header {
-  background-color: #009688 !important;
+  background-color: #009688;
   padding: 32px 16px;
   color: white;
   letter-spacing: 4px;
+  text-align: center;
 }
 
 #modal .header-name {
@@ -438,6 +460,36 @@ html {
   padding: 0.15px 16px;
 }
 
-/* #modal .modal-label {
+#modal .modal-label {
+  margin: 15px 0;
+}
+
+#modal .inp {
+  padding: 8px;
+  font-size: 15px;
+  width: 868px;
+}
+
+#modal .submit {
+  margin: 16px 0;
+  padding: 16px;
+  color: white;
+  background-color: #009688;
+  border: none;
+  width: 868px;
+}
+
+#modal .submit:hover {
   color: #000;
-} */
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+#modal .help {
+  margin: 15px 0;
+  text-align: right;
+}
+
+#modal .help a {
+  color: #2196f3;
+}
