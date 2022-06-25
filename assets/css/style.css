@@ -15,7 +15,8 @@ html {
   background-color: #000;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+  /* overflow: hidden; */
 }
 
 #nav {
@@ -35,7 +36,7 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-#nav li:hover .subnav {
+#nav .nav-more:hover .subnav {
   display: block;
 }
 
@@ -61,6 +62,7 @@ html {
   text-decoration: none;
   line-height: 46.5px;
   display: block;
+  cursor: pointer;
 }
 
 #nav > li:hover > a {
@@ -194,7 +196,8 @@ html {
 }
 
 #tour-content {
-  height: 846.27px;
+  /* height: 846.27px; */
+  height: auto;
   padding: 64px 16px;
   max-width: 800px;
   margin: 0 auto;
@@ -248,6 +251,7 @@ html {
   width: 33.33333%;
   text-align: center;
   margin-bottom: 16px;
+  padding: 0 8px;
 }
 
 #tour-places::after {
@@ -257,13 +261,13 @@ html {
 }
 
 #tour-places .place-img {
-  width: 245.33px;
+  width: 100%;
 }
 
 #tour-places .place-description {
   background-color: #fff;
-  width: 245.33px;
-  margin: -2.6px 8px 0;
+  /* width: 245.33px; */
+  margin: -2.6px 0;
   padding: 0.15px 16px;
   text-align: left;
 }
@@ -287,6 +291,7 @@ html {
   margin: 0 0 16px;
   padding: 8px 16px;
   background-color: #000;
+  border: #000;
   color: white;
   font-size: 15px;
   font-family: Lato, sans-serif;
@@ -301,7 +306,6 @@ html {
   border: #ccc;
   color: #000;
   cursor: pointer;
-  height: 38.2px;
 }
 
 #contact {
@@ -313,6 +317,7 @@ html {
 #contact .contact-column {
   float: left;
   width: 50%;
+  text-align: justify;
 }
 
 #contact .contact-content {
@@ -341,19 +346,22 @@ html {
 }
 
 #contact .fill-name {
-  width: 183.98px;
+  /* max-width: 183.98px; */
+  width: 47.8%;
   height: 40.5px;
   margin: 0 13px 8px 0;
 }
 
 #contact .fill-email {
-  width: 183.98px;
+  /* max-width: 183.98px; */
+  width: 47.8%;
   height: 40.5px;
   margin: 0 0 8px 0;
 }
 
 #contact .fill-message {
-  width: 383.98px;
+  /* width: 383.98px; */
+  width: 100%;
   height: 40.5px;
 }
 
@@ -362,6 +370,7 @@ html {
   padding: 8px 16px;
   margin: 16px 0;
   background-color: #000;
+  border: #000;
   color: #fff;
   width: 71.31px;
   height: 38.5px;
@@ -422,7 +431,9 @@ html {
 }
 
 #modal .modal-container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 16px;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   animation-name: modal-appear;
@@ -481,7 +492,8 @@ html {
 #modal .inp {
   padding: 8px;
   font-size: 15px;
-  width: 868px;
+  /* width: 868px; */
+  width: 100%;
 }
 
 #modal .submit {
@@ -490,7 +502,8 @@ html {
   color: white;
   background-color: #009688;
   border: none;
-  width: 868px;
+  /* width: 868px; */
+  width: 100%;
 }
 
 #modal .submit:hover {

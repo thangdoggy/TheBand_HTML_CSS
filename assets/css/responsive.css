@@ -1,0 +1,93 @@
+/* PC */
+@media (min-width: 1024px) {
+  #header .fa-bars {
+    display: none;
+  }
+
+  #header .nav-merch {
+    display: none;
+  }
+}
+
+/* IPAD */
+@media (min-width: 740px) and (max-width: 1024px) {
+  #header .fa-bars {
+    display: none;
+  }
+
+  #header .nav-merch {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 739px) {
+  #header {
+    overflow: hidden;
+  }
+
+  #header .nav-more {
+    display: none;
+  }
+
+  #header .search-button {
+    display: none;
+  }
+
+  #header .fa-bars {
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 24px;
+    height: 46.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #header .fa-bars:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #nav li {
+    display: block;
+  }
+
+  #nav .nav-home {
+    display: inline-block;
+  }
+
+  #slider .img-description {
+    display: none;
+  }
+
+  #team .member {
+    float: left;
+    width: 100%;
+  }
+
+  #team .member-img {
+    width: 60%;
+    height: auto;
+  }
+
+  #tour-places .place {
+    float: left;
+    width: 100%;
+  }
+
+  #contact .contact-column {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+
+  #contact .fill {
+    width: 100%;
+  }
+}
