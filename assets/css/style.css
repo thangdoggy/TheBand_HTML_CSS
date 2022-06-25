@@ -100,13 +100,13 @@ html {
 
 @keyframes transition-img {
   0% {
-    background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
   }
   50% {
-    background: url(/assets/img/slider/la.jpg) top center / cover no-repeat;
+    background: url(../img/slider/la.jpg) top center / cover no-repeat;
   }
   100% {
-    background: url(/assets/img/slider/ny.jpg) top center / cover no-repeat;
+    background: url(../img/slider/ny.jpg) top center / cover no-repeat;
   }
 }
 
@@ -347,14 +347,14 @@ html {
 
 #contact .fill-name {
   /* max-width: 183.98px; */
-  width: 47.8%;
+  width: 47.5%;
   height: 40.5px;
   margin: 0 13px 8px 0;
 }
 
 #contact .fill-email {
   /* max-width: 183.98px; */
-  width: 47.8%;
+  width: 47.5%;
   height: 40.5px;
   margin: 0 0 8px 0;
 }
@@ -386,7 +386,7 @@ html {
 }
 
 #poster {
-  background: url(/assets/img/content/map.jpg) center / cover no-repeat;
+  background: url(../img/content/map.jpg) center / cover no-repeat;
   padding-top: 50%;
 }
 
