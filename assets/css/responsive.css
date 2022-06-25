@@ -1,5 +1,5 @@
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   #header .fa-bars {
     display: none;
   }
@@ -10,7 +10,7 @@
 }
 
 /* IPAD */
-@media (min-width: 740px) and (max-width: 1024px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
   #header .fa-bars {
     display: none;
   }
@@ -21,7 +21,7 @@
 }
 
 /* MOBILE */
-@media (max-width: 739px) {
+@media (max-width: 46.1875em) {
   #header {
     overflow: hidden;
   }

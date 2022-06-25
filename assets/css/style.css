@@ -36,7 +36,7 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-#nav .nav-more:hover .subnav {
+#nav li:hover .subnav {
   display: block;
 }
 
